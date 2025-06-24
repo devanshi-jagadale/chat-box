@@ -1,0 +1,18 @@
+h2{
+    text-align: center;
+    color: #333;
+}
+h3 {
+    text-align: center;
+    color: #555;
+}
+ul {
+    list-style: none;
+    padding: 0 auto;
+    text-align: center;
+    list-style: none;
+}
+li {
+    padding: 10px auto;
+    text-align: center;
+}

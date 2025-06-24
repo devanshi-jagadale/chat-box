@@ -1,0 +1,78 @@
+/* Global resets */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form styling */
+.form-container {
+  width: 360px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.form-container button:hover {
+  background-color: #005fa3;
+}
+
+/* User List */
+.user-list {
+  max-width: 600px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+}
+
+.user-list h2 {
+  margin-bottom: 1rem;
+}
+
+.user-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.user-list li:last-child {
+  border-bottom: none;
+}
