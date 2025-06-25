@@ -1,5 +1,6 @@
-// src/api.js
-const API = 'http://localhost:3000';
+const API = import.meta.env.VITE_API_URL;
+
+export default API;
 
 export async function signup(email, password) {
   const res = await fetch(`${API}/auth/register`, {
