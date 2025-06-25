@@ -5,7 +5,7 @@ const authRoutes = require('./auth');
 const app = express();
 
 const corsOptions = {
-  origin: 'https://your-frontend-url.onrender.com', // replace with your actual frontend Render URL
+  origin: 'https://chat-box-1-cuua.onrender.com', // replace with your actual frontend Render URL
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true
 };
