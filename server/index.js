@@ -3,7 +3,15 @@ const cors = require('cors');
 const authRoutes = require('./auth');
 
 const app = express();
-app.use(cors());
+
+const corsOptions = {
+  origin: 'https://your-frontend-url.onrender.com', // replace with your actual frontend Render URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  credentials: true
+};
+
+app.use(cors(corsOptions));
+
 app.use(express.json());
 
 app.use('/', authRoutes);
