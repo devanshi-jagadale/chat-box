@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "node index.js",
     "start": "node index.js",
-    "postinstall": "npx prisma generate --binary-targets native,debian-openssl-3.0.x",
     "prisma:generate": "npx prisma generate",
     "prisma:push": "npx prisma db push",
     "prisma:migrate": "npx prisma migrate dev",
