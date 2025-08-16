@@ -4,9 +4,9 @@
   "description": "Backend server for the messaging application",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "build": "npx prisma generate",
-    "dev": "nodemon index.js",
+    "dev": "node index.js",
+  "start": "node index.js",
+  "postinstall": "npx prisma generate",
     "prisma:generate": "prisma generate",
     "prisma:push": "prisma db push",
     "prisma:migrate": "prisma migrate dev",
