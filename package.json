@@ -12,7 +12,8 @@
     "db:generate": "cd server && npm run prisma:generate",
     "db:push": "cd server && npm run prisma:push",
     "db:migrate": "cd server && npm run prisma:migrate",
-    "db:studio": "cd server && npm run prisma:studio"
+    "db:studio": "cd server && npm run prisma:studio",
+    "postinstall": "cd server && npx prisma generate --binary-targets native,debian-openssl-3.0.x"
   },
   "keywords": ["messaging", "chat", "real-time", "nodejs", "express", "postgresql", "prisma", "react"],
   "author": "Your Name",
