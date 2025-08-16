@@ -4,7 +4,7 @@
   "description": "A real-time messaging application built with Node.js, Express, PostgreSQL, Prisma, and React",
   "main": "server/index.js",
   "scripts": {
-    "start": "node server/index.js",        
+    "start": "cd server && npm start",        
     "build": "cd client && npm run build",  
     "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
     "server:dev": "cd server && npm run dev",
@@ -13,9 +13,18 @@
     "db:push": "cd server && npm run prisma:push",
     "db:migrate": "cd server && npm run prisma:migrate",
     "db:studio": "cd server && npm run prisma:studio",
-    "postinstall": "cd server && npx prisma generate --binary-targets native,debian-openssl-3.0.x"
+    "postinstall": "cd server && npm run prisma:generate"
   },
-  "keywords": ["messaging", "chat", "real-time", "nodejs", "express", "postgresql", "prisma", "react"],
+  "keywords": [
+    "messaging",
+    "chat",
+    "real-time",
+    "nodejs",
+    "express",
+    "postgresql",
+    "prisma",
+    "react"
+  ],
   "author": "Your Name",
   "license": "MIT",
   "devDependencies": {
