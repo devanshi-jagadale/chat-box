@@ -4,17 +4,24 @@
   "description": "A real-time messaging application built with Node.js, Express, PostgreSQL, Prisma, and React",
   "main": "server/index.js",
   "scripts": {
-    "start": "cd server && npm start",        
-    "build": "cd server && npm install && npm run prisma:generate",  
-    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
-    "server:dev": "cd server && npm run dev",
-    "client:dev": "cd client && npm run dev",
-    "db:generate": "cd server && npm run prisma:generate",
-    "db:push": "cd server && npm run prisma:push",
-    "db:migrate": "cd server && npm run prisma:migrate",
-    "db:studio": "cd server && npm run prisma:studio",
-    "postinstall": "cd server && npm run prisma:generate"
-  },
+  "start": "cd server && npm start",          
+  "build": "npm run build:server && npm run build:client",
+
+  "build:server": "cd server && npm run prisma:generate",
+  "build:client": "cd client && npm install && npm run build",
+
+  "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+  "server:dev": "cd server && npm run dev",
+  "client:dev": "cd client && npm run dev",
+
+  "db:generate": "cd server && npm run prisma:generate",
+  "db:push": "cd server && npm run prisma:push",
+  "db:migrate": "cd server && npm run prisma:migrate",
+  "db:studio": "cd server && npm run prisma:studio",
+
+  "postinstall": "cd server && npm run prisma:generate"
+}
+,
   "keywords": [
     "messaging",
     "chat",
