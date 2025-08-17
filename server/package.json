@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node index.js",
     "start": "node index.js",
+    "build": "npm run prisma:generate && npm run prisma:push && npm run prisma:migrate",
     "prisma:generate": "npx prisma generate",
     "prisma:push": "npx prisma db push",
     "prisma:migrate": "npx prisma migrate dev",
